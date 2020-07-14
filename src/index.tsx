@@ -15,8 +15,9 @@ import {changeRegionSelectorSearchText} from "./redux/actionCreators/changeRegio
 import {selectRegionAction} from "./redux/actionCreators/selectRegionAction";
 import {onSelectRegionSaga} from "./redux/sagas/onSelectRegionSaga";
 import {changeDateAction} from "./redux/actionCreators/changeDateAction";
-import {changeDayPart} from "./redux/actionCreators/changeDayPartAction";
+import {changeDayPartAction} from "./redux/actionCreators/changeDayPartAction";
 import {DayPart} from "./redux/reducers/enums/DayPart";
+import {resetRegionAction} from "./redux/actionCreators/resetRegionAction";
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -62,7 +63,11 @@ function renderApp() {
                      }}
 
                      changeDayPart={function (dayPart: DayPart) {
-                         globalStore.dispatch(changeDayPart(dayPart))
+                         globalStore.dispatch(changeDayPartAction(dayPart))
+                     }}
+
+                     resetRegion={function() {
+                         globalStore.dispatch(resetRegionAction())
                      }}
 
                 />

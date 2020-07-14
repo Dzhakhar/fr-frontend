@@ -7,6 +7,7 @@ import {monthIndexToName} from "../../../redux/reducers/enums/MonthIndexToName";
 interface IWeatherLayerProps {
     changeDate: (date: string) => any,
     changeDayPart: (dayPart: DayPart) => any,
+    resetRegion: () => any,
     selectedDate: string,
     selectedDayPart: DayPart,
     selectedRegion: IRegion | null,
@@ -18,7 +19,7 @@ export const WeatherLayer = (props: IWeatherLayerProps) => {
         <div className={"weather-layer"}>
             <div className="weather-layer__top">
                 <div className={"controls-header"}>
-                    <div className={"controls-header__arrow"}>
+                    <div className={"controls-header__arrow"} onClick={() => props.resetRegion()}>
                         <i className={"fas fa-angle-left"}></i>
                     </div>
                     <h1>

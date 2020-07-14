@@ -6,7 +6,7 @@ export interface IChangeDayPart extends Action {
     payload: string
 }
 
-export function changeDayPart(dayPart: DayPart): IChangeDayPart {
+export function changeDayPartAction(dayPart: DayPart): IChangeDayPart {
     return {
         type: Actions.CHANGE_DAY_PART,
         payload: dayPart

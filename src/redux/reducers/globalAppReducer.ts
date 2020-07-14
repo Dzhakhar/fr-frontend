@@ -81,6 +81,14 @@ export const globalAppReducer = (state: IGlobalState = initialState, action: IGl
                 selectedDayPart: (action.payload as DayPart)
             };
 
+        case Actions.RESET_REGION_ACTION:
+            return {
+                ...state,
+                selectedRegion: null,
+                isRegionSelectorExpanded: true,
+                selectedDate: ""
+            };
+
         default:
             return state;
     }

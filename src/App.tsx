@@ -15,6 +15,7 @@ interface IAppProps {
     changeDate: (date: string) => any,
     changeDayPart: (dayPart: DayPart) => any,
     selectRegion: (region: IRegion) => any,
+    resetRegion: () => any,
     searchText: string,
     selectedDate: string,
     selectedDayPart: DayPart,
@@ -53,6 +54,7 @@ function App(props: IAppProps) {
                 {props.selectedRegion && (
                     <WeatherLayer changeDate={props.changeDate}
                                   changeDayPart={props.changeDayPart}
+                                  resetRegion={props.resetRegion}
                                   selectedDate={props.selectedDate}
                                   selectedDayPart={props.selectedDayPart}
                                   selectedRegion={props.selectedRegion}
