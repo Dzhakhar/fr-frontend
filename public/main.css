@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+.region-selector {
+    border-radius: 4px;
+    background: white;
+    padding: 12px;
+}
+
+.region-selector-input-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+input.region-selector {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.controls-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow: auto;
+}
+
+.region-item {
+    cursor: pointer;
+    border-radius: 4px;
+    background: #204051;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: right;
+}
+
+.region-list {
+    margin-top: 60px;
+}
+
+.controls-header {
+    display: flex;
+    align-items: center;
+}
+
+.controls-header__arrow {
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.controls-header__arrow i {
+    font-size: 1.5em;
+}
+
+.controls-header h1 {
+    color: white;
+    margin: 0;
+}
+
+/* weather layer styles */
+
+.weather-layer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.weather-layer__top {
+    margin-bottom: auto;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.dates__item {
+    padding: 12px;
+    color: #204051;
+    background: white;
+    opacity: 0.6;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.dates__item:last-child {
+    margin-right: 0;
+}
+
+.dates__item--active {
+    opacity: 1;
+}
+
+.dates__day {
+    font-weight: bold;
+}
+
+/* weather data styles below */
+.weather-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-data__temperature {
+    color: white;
+}
+
+.weather-data__temperature i {
+    font-size: 1.4em;
+}
+
+.weather-data__temperature .weather-data__temperature-text {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+/* day-part-selector */
+.day-part-selector {
+    display: flex;
+    justify-content: space-around;
+    color: #204051;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.day-part-selector__item {
+    cursor: pointer;
+    transition: .4s;
+    opacity: 0.6;
+    background: white;
+    padding: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.day-part-selector__item--active {
+    font-weight: bold;
+    opacity: 1;
+}

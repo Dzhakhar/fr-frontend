@@ -1,0 +1,53 @@
+.theme-root .region-item {
+    background: white;
+    color: #204051;
+}
+
+.theme-root.theme-root--dark .region-item {
+    background: #204051;
+    color: white;
+}
+
+.theme-root .controls-header__arrow {
+    color: #204051;
+}
+
+.theme-root.theme-root--dark .controls-header__arrow {
+    color: white;
+}
+
+.theme-root.theme-root--dark .day-part-selector__item {
+    color: #204051;
+    background: white;
+}
+
+.theme-root .day-part-selector__item {
+    color: white;
+    background: #204051;
+}
+
+.theme-root.theme-root--dark .dates__item {
+    color: #204051;
+    background: white;
+}
+
+.theme-root .dates__item {
+    color: white;
+    background: #204051;
+}
+
+.theme-root.theme-root--dark .controls-header h1 {
+    color: white;
+}
+
+.theme-root .controls-header h1 {
+    color: #204051;
+}
+
+.theme-root.theme-root--dark .weather-data__temperature {
+    color: white;
+}
+
+.theme-root .weather-data__temperature {
+    color: #204051;
+}
