@@ -1,3 +1,6 @@
+## BACKEND (important)
+You will need to clone and run backend https://github.com/Dzhakhar/fr-backend in order to make this project work properly
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
