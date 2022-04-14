@@ -1,6 +1,6 @@
 You will need to clone and run backend https://github.com/Dzhakhar/fr-backend in order to make this project work properly
 
-installation and running:
+## installation and running:
 
 1)```npm install -g yarn```
 
