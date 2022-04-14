@@ -7,6 +7,6 @@ installation and running:
 
 2)```yarn```
 
-3) (clone and run https://github.com/Dzhakhar/fr-backend)
+3)(clone and run https://github.com/Dzhakhar/fr-backend)
 
 4)```yarn start```
