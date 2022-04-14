@@ -1,1 +1,1 @@
-export const WEATHER_API_HOSTNAME: string = "http://ec2-3-128-94-243.us-east-2.compute.amazonaws.com:9090";
+export const WEATHER_API_HOSTNAME: string = "http://localhost:9090";
